@@ -7,7 +7,7 @@ html {
   text-align: center;
 }
 body {
-  width: 960px;
+  width: 100%;
   margin: auto;
 }
 /*Header Styles*/
@@ -32,7 +32,7 @@ header img {
   background-image: url('../motobackground.jpeg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   height: 25rem;
   width: 100%;
 }
@@ -65,18 +65,18 @@ header img {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: space-around;
 }
 .item {
   display: flex;
   flex-basis: auto;
-  width: 30%;
+  max-width: 30%;
   flex-flow: column nowrap;
  
 }
 .item img {
   height: 9rem;
-  width: auto;
+  max-width: 9rem;
   border: 4px solid black;
   padding: 2rem;
   justify-content: center;
@@ -91,10 +91,10 @@ justify-content: space-between;
 .contact {
   display: inline-flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .contact div {
-  width: 35%;
+  max-width: 35%;
   text-align: left;
   margin-top: 3rem;
   margin-bottom: 4rem;
