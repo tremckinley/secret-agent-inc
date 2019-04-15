@@ -1,3 +1,4 @@
+/*Universal Styles*/
 html {
   font-size: 18px;
   font-family: Helvetica, Arial, sans-serif;
@@ -6,17 +7,14 @@ html {
   text-align: center;
 }
 body {
-  width: 1200px;
-  margin: auto;
-}
-.main-contain {
   width: 960px;
   margin: auto;
 }
+/*Header Styles*/
 header {
   display: flex;
   background-color: black;
-  padding: 0.66rem 0.5rem;
+  padding: 0.66rem 0rem;
   width: 100%;
   text-align: left;
   color: white;
@@ -28,4 +26,96 @@ header img {
   height: 1.5rem;
   width: auto;
   margin: 0rem 0.5rem;
+}
+/*Banner Styles*/
+.banner {
+  background-image: url('../motobackground.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 25rem;
+  width: 100%;
+}
+.banner-box {
+  position: relative;
+  text-align: left;
+  background-color: black;
+  top: 9rem;
+  width: 20rem;
+  padding: 2rem 3rem;
+  color: white;
+  font-weight: bold;
+}
+.banner-box p {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+.banner-box h1 {
+  font-size: 2rem;
+}
+/*Nav Bar Style*/
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  background-color: firebrick;
+  color: white;
+  padding: 0.75rem;
+}
+.product {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.item {
+  display: flex;
+  flex-basis: auto;
+  width: 30%;
+  flex-flow: column nowrap;
+ 
+}
+.item img {
+  height: 9rem;
+  width: auto;
+  border: 4px solid black;
+  padding: 2rem;
+  justify-content: center;
+}
+.item p {
+  background-color: black;
+  padding: 0.5rem;
+  color: white;
+  align-items: center;
+}
+/*Location and hours style*/
+.contact {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.contact div {
+  width: 35%;
+  text-align: left;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.head-contact {
+  background-color: black;
+  padding: 1rem 2rem;
+  align-items: center;
+  color: white;
+}
+.sub-contact {
+  line-height: 1.3rem;
+}
+/*Footer Style*/
+footer {
+  background-color: black;
+  height: 5rem;
+  text-align: left;
+  color: white;
+  align-items: center;
+}
+footer p {
+  padding-top: 2.5rem;
 }
